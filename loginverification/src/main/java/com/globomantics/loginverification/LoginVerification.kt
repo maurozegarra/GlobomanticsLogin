@@ -1,8 +1,10 @@
 package com.globomantics.loginverification
 
 class LoginVerification {
-    fun verifyEmailAndPassword(email: String, password: String): Boolean {
-        return email == "test@globomantics.com" &&
-                password == "test123"
+    fun verifyCredentials(email: String, password: String): Boolean {
+        return (email == "test@globomantics.com" &&
+                password == "test123") ||
+                (email == "admin@globomantics.com" &&
+                        password == "admin123")
     }
 }
